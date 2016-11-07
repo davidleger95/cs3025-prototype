@@ -1,5 +1,5 @@
-name: CSS Circle Charts
-description: Simple Circle Charts using CSS
+name: FCS Kiosk
+description: FCS Welcome Kiosk
 markdown: redcarpet
 redcarpet:
   extensions: ["autolink", "tables"]
