@@ -9,5 +9,5 @@ exclude: ["node_modules",
   "preview.jpg",
   "README.md"]
 
-baseurl: '' #'/css-circle-charts'
+baseurl: /cs3025-prototype'
 highlighter: pygments
