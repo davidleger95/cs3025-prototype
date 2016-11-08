@@ -1,0 +1,14 @@
+<div id="search" class="search-empty panel">
+  <div class="status-bar">
+    <button class="back-btn" data-section="#home">Back</button>
+    <h3>Search</h3>
+  </div>
+  <form class="form">
+    <input class="search-field" type="search" name="search" placeholder="Room #, Event, Person..." />
+  </form>
+  <div class="empty">
+    <img src="{{ site.baseurl }}/assets/img/arrow-up.svg" alt="Up Arrow" />
+    <h2>Search for rooms, people, or events!</h2>
+  </div>
+  {% include sidebar/search-results.html %} 
+</div>

@@ -1,0 +1,11 @@
+- title: Search
+  link: '#search'
+  icon: search.svg
+
+- title: Browse Events
+  link: '#events'
+  icon: event.svg
+
+- title: Browse People
+  link: '#people'
+  icon: person.svg

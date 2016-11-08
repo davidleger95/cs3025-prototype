@@ -1,0 +1,27 @@
+- name: Scott Bateman
+  room: GC128
+  level: C
+  building: Gillin
+  img: bateman.jpg
+  position: Assistant Professor
+
+- name: Suprio Ray
+  room: GC106
+  level: C
+  building: Gillin
+  img: ray.jpg
+  position: Assistant Professor
+
+- name: Rick Wightman
+  room: ITD421
+  level: D
+  building: ITC Building
+  img: wightman.jpg
+  position: Senior Teaching Associate
+
+- name: Natalie Webber
+  room: ITD423
+  level: D
+  building: ITC Building
+  img: webber.jpg
+  position: Senior Teaching Associate

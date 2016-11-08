@@ -1,0 +1,14 @@
+{% for item in site.data.events %}
+<li class="list-item" data-tags="{{ item.name }} {{ item.room }}">
+  <a href="#event">
+    <div class="thumbnail">
+      <img src="{{site.baseurl}}/assets/img/{{ item.img }}" alt="{{ item.imgAlt }}" />
+    </div>
+    <div class="data">
+      <h5>{{ item.room }}</h5>
+      <h4>{{item.name}}</h4>
+      <h6>{{ item.dateTime }}</h6>
+    </div>
+  </a>
+</li>
+{% endfor %}

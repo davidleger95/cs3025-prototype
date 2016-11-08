@@ -1,0 +1,12 @@
+<section id="home" class="panel">
+  <ul class="main-menu">
+    {% for item in site.data.home-menu %}
+      <li class="menu-item" data-section="{{ item.link }}">
+        <a href="{{ item.link }}">
+          <img src="{{ site.baseurl }}/assets/img/{{ item.icon }}" alt="Icon" />
+          <h1>{{ item.title }}</h1>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,22 @@
+- name: Scott Bateman Appreciation Party
+  room: GC124
+  roomType: Lecture Room
+  level: C
+  building: Gillin
+  dateTime: 11:30AM-1:00PM, Today
+  tags: party food free
+
+- name: IBM Co-op Interviews
+  room: ITC107
+  roomType: Meeting Room
+  level: E
+  building: Gillin
+  dateTime: 2:30PM-3:30PM, Monday
+
+- name: Intro to the Cloud with Amazon Web Services
+  room: GE124
+  roomName: CS Square
+  roomType: Collaboration Space
+  level: E
+  building: Gillin
+  dateTime: 2:30PM-3:30PM, Monday

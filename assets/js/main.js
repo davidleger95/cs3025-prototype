@@ -1,43 +1,55 @@
 /**************************************************
  *
- * Functions for CSS Circle Charts
+ * CS3025 Prototype
  * AUTHOR   David Leger
  *          www.davidleger.me
  *
  **************************************************/
 
-$(document).ready(function(){
-
-    
-});
-
-//TODO implement Huff Post Polster API
-// http://elections.huffingtonpost.com/pollster/api/charts/?state=NH&topic=2016-president-dem-primary
-// http://elections.huffingtonpost.com/pollster/api/charts/?state=NH&topic=2016-president-gop-primary
-
-// TODO refactor this function for maintainability
 (function(){
-    var chart = $('.circle-chart');
-    var data = null;
-    var dataR = null;
-    var dataROffset = null;
-    var stroke = null;
-    var circle = null;
-    var pi = 3.1459;
-    var piPC = pi*100 + "%";
-    for(var i = 0; i < chart.length; i++){
-        
-        data = $(chart[i]).find('.chart-data').text();
-        circle = $(chart[i]).find('circle.PC');
-        dataR = data*pi*0.8;
-        dataROffset = pi*100 - dataR;
-        stroke = dataR + "%, " + dataROffset + "%";
-        console.log(dataR);
-        circle.css({'stroke-dasharray': stroke,
-                    'stroke-dashoffset': piPC});
+
+  $('.menu-item, .back-btn').on('click', function () {
+    $('.menu-item, .back-btn').removeClass('active');
+    $(this).addClass('active');
+
+    var currentSection = $(this).attr('data-section');
+    $('.panel').hide(300);
+    $(currentSection).show(300);
+
+    if (currentSection === '#search') {
+      $('.search-field').focus();
     }
-    
-    $('.msg').text(data);
-    console.log(dataR + " " + dataROffset + " " + stroke);
-    
+  });
+
+  $('.form').on('submit', function (e) {
+    e.preventDefault();
+
+    console.log('submit');
+
+    var searchTerm = e.target.search.value.toLowerCase();
+
+    if (searchTerm.length > 0) {
+      console.log(searchTerm);
+
+      var tags = null;
+
+      $('.list-item').each(function(){
+        tags = $(this).attr('data-tags').toLowerCase();
+        console.log('data-tags', tags);
+
+        if (~tags.indexOf(searchTerm)) {
+          $(this).slideDown();
+        } else {
+          $(this).slideUp();
+        }
+      });
+
+      $('.empty').hide(300);
+      $('.search-results').slideDown();
+    } else {
+      $('.search-results').slideUp();
+      $('.empty').show(300);
+    }
+  });
+
 })();

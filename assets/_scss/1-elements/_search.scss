@@ -1,0 +1,35 @@
+#search {
+  display: none;
+
+  input[type="search"] {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: none;
+
+    //border-radius: 2em;
+    //border: 2px solid $primary;
+
+
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 20px rgba($primary, 0.75) inset;
+    }
+  }
+
+  .empty {
+    text-align: center;
+    padding: 20vh 20px;
+
+    img {
+      height: 5em;
+    }
+  }
+
+  .search-results {
+    display: none;
+
+  }
+}
