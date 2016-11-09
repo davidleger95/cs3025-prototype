@@ -13,9 +13,8 @@
   .map-img {
     position: relative;
     overflow: auto;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background: pink;
   }
 
   img {
@@ -25,6 +24,10 @@
     min-width: calc(100vw - 300px);
     min-height: 100vh;
     align-self: center;
+
+    &.path {
+      display: none;
+    }
   }
 
   &.full-map {
@@ -33,6 +36,8 @@
       min-width: auto;
       min-height: auto;
       width: 100%;
+      margin-top: 20vh;
+      //transform: translateY(calc(50% - 50px));
     }
 
   }

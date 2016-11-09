@@ -2724,6 +2724,9 @@ a {
     display: block;
     float: left; }
 
+.locate-active {
+  background: pink; }
+
 #sidebar {
   position: fixed;
   left: 0;
@@ -2748,9 +2751,8 @@ a {
   #map .map-img {
     position: relative;
     overflow: auto;
-    height: 100vh;
-    width: 100%;
-    background: pink; }
+    min-height: 100vh;
+    width: 100%; }
   #map img {
     top: 0;
     left: 0;
@@ -2759,10 +2761,13 @@ a {
     min-height: 100vh;
     -ms-flex-item-align: center;
         align-self: center; }
+    #map img.path {
+      display: none; }
   #map.full-map img {
     min-width: auto;
     min-height: auto;
-    width: 100%; }
+    width: 100%;
+    margin-top: 20vh; }
   #map .controls {
     position: fixed;
     text-align: center;

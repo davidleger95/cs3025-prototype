@@ -74,4 +74,12 @@
     location.reload();
 
   });
+
+  $('.locate').on('click', function() {
+    var room = $(this).attr('data-room');
+
+    $('.path').hide();
+    $('.' + room).show();
+  });
+
 })();

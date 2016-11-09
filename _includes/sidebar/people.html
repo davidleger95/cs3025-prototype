@@ -1,6 +1,6 @@
 {% for item in site.data.people %}
 <li class="list-item" data-tags="{{ item.name }} {{ item.room }}">
-  <a href="#prof">
+  <a href="#prof" class="locate" data-room="{{ item.room }}">
     <div class="thumbnail">
       <img src="{{site.baseurl}}/assets/img/{{ item.img }}" alt="{{ item.imgAlt }}" />
     </div>
