@@ -14,25 +14,31 @@
       </h4>
       <h6>
         {% if item.features.printer == true %}
-          <span class="icon icon-printer true fa-print"></span>
+          <span class="icon icon-printer true fa-print1">Printer</span>
         {% endif %}
         {% if item.features.smartboard == true %}
-        <span class="icon icon-smartboard true fa-window-maximize"></span>
+        <span class="icon icon-smartboard true fa-window-maximize1">Smart Board</span>
         {% endif %}
         {% if item.features.mac == true %}
-        <span class="icon icon-mac true fa-apple"></span>
+        <span class="icon icon-mac true fa-apple1">Mac Computers</span>
         {% endif %}
         {% if item.features.windows == true %}
-        <span class="icon icon-windows true fa-windows"></span>
+        <span class="icon icon-windows true fa-windows1">Windows Computers</span>
         {% endif %}
         {% if item.features.linux == true %}
-        <span class="icon icon-linux true fa-linux"></span>
+        <span class="icon icon-linux true fa-linux1">Linux Computers</span>
         {% endif %}
         {% if item.features.projector == true %}
-        <span class="icon icon-projector true fa-television"></span>
+        <span class="icon icon-projector true fa-television1">Projector</span>
+        {% endif %}
+        {% if item.features.whiteboard == true %}
+        <span class="icon icon-projector true fa-television1">Whiteboard</span>
+        {% endif %}
+        {% if item.features.chalkboard == true %}
+        <span class="icon icon-projector true fa-television1">Chalkboard</span>
         {% endif %}
         {% if item.features.phone == true %}
-        <span class="icon icon-phone true fa-phone"></span>
+        <span class="icon icon-phone true fa-phone1">Phone</span>
         {% endif %}
       </h6>
     </div>
