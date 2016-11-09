@@ -1,5 +1,5 @@
 html, body{
-    background: $primary;
+    //background: $primary;
     color: $dark;
 }
 
@@ -9,11 +9,12 @@ a {
 }
 
 .status-bar {
+  //text-transform: uppercase;
   position: relative;
   text-align: center;
   background-color: $dark;
   color: $light;
-  padding: 10px;
+  padding: 15px;
 
   h3 {
     margin: 0;
@@ -31,8 +32,8 @@ a {
   line-height: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
-
-  background-color: rgba($light, 0.25);
+  padding: 0 10px;
+  background-color: rgba($accent, 1);
 
   &:before {
     content: '';

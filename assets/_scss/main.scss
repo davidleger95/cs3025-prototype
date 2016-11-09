@@ -8,6 +8,7 @@
 
 // Bourbon mixins
 @import "tools/bourbon/bourbon";
+@import "fa/font-awesome";
 
 // 0-base contains the basis for the styles.
 @import "0-base/fonts";
@@ -21,3 +22,4 @@
 @import "1-elements/home";
 @import "1-elements/search";
 @import "1-elements/list";
+@import "1-elements/rooms";

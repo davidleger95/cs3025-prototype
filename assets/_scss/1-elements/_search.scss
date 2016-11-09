@@ -1,6 +1,13 @@
 #search {
   display: none;
 
+  .form {
+    box-shadow: 0 0 10px rgba($light, 1);
+    overflow: auto;
+    z-index: 5;
+    border-bottom: 1px solid $light;
+  }
+
   input[type="search"] {
     width: 100%;
     box-sizing: border-box;
@@ -30,6 +37,8 @@
 
   .search-results {
     display: none;
-
+    height: 83vh;
+    overflow: auto;
+    z-index: 0;
   }
 }

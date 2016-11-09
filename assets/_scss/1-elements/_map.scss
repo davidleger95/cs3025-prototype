@@ -1,3 +1,74 @@
-.map {
-  
+#map {
+  position: relative;
+  margin-left: 300px;
+  overflow: auto;
+  width: calc(100vw - 300px);
+  height: 100vh;
+  align-items: center;
+
+  h1 {
+    color: $accent;
+  }
+
+  img {
+    min-width: calc(100vw - 300px);
+    min-height: 100vh;
+    align-self: center;
+  }
+
+  &.full-map {
+    display: flex;
+    img {
+      min-width: auto;
+      min-height: auto;
+      width: 100%;
+    }
+
+  }
+
+  .controls {
+    position: fixed;
+    text-align: center;
+    left: 300px;
+    right: 0;
+    bottom: 0;
+
+  }
+
+  .reset-btn {
+    position: fixed;
+    left: calc(300px + 2em);
+    top: 2em;
+    display: block;
+    width: 5em;
+    height: 3em;
+  }
+
+  .nav-arrows {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+
+
+  }
+  button {
+    display: block;
+    width: 5em;
+    height: 3em;
+    box-shadow: 0 0 30px $light;
+    text-transform: uppercase;
+    color: $accent;
+  }
+  .map-size-btn {
+    position: fixed;
+    left: calc(300px + 2em);
+    bottom: 2em;
+    display: block;
+    width: 5em;
+    height: 3em;
+  }
+
+  #d, #e {
+    display: none;
+  }
 }

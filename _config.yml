@@ -9,5 +9,4 @@ exclude: ["node_modules",
   "preview.jpg",
   "README.md"]
 
-baseurl: /cs3025-prototype
-highlighter: pygments
+baseurl: '' #/cs3025-prototype

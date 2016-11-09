@@ -1,0 +1,48 @@
+- room: GC124
+  roomType: Lecture Room
+  level: C
+  building: Gillin
+  tags: class lecture projector
+  features:
+    printer: false
+    smartboard: false
+    mac: false
+    windows: false
+    linux: false
+    projector: true
+    whiteboard: false
+    chalkboard: true
+    phone: false
+
+- room: ITC107
+  roomType: Meeting Room
+  level: C
+  building: Gillin
+  tags: conference phone call smart board smartboard phone projector
+  features:
+    printer: false
+    smartboard: true
+    mac: false
+    windows: false
+    linux: false
+    projector: true
+    whiteboard: false
+    chalkboard: false
+    phone: true
+
+- room: GE124
+  roomName: CS Square
+  roomType: Collaboration Space
+  level: E
+  building: Gillin
+  tags: cs2 bits and bytes bits bytes bites workshop pitch competition tutortial
+  features:
+    printer: false
+    smartboard: false
+    mac: false
+    windows: false
+    linux: false
+    projector: true
+    whiteboard: true
+    chalkboard: false
+    phone: false

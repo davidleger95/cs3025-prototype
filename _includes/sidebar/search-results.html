@@ -1,5 +1,9 @@
 <div class="search-results">
-  <ul class="list">
+  <ul class="list searchable">
+    <li class="header">Rooms</li>
+    {% include sidebar/rooms.html %}
+    <li class="header">Events</li>
+    {% include sidebar/events.html %}
     <li class="header">People</li>
     {% include sidebar/people.html %}
   </ul>

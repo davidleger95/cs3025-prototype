@@ -1,0 +1,41 @@
+{% for item in site.data.rooms %}
+<li class="list-item" data-tags="{{ item.name }} {{ item.room }} {{ item.tags }}">
+  <a href="#room">
+    <div class="thumbnail">
+      <img src="{{site.baseurl}}/assets/img/{{ item.img }}" alt="{{ item.imgAlt }}" />
+    </div>
+    <div class="data rooms">
+      <h5>{{ item.room }}</h5>
+      <h4>
+        {% if item.name %}
+        <span class="room-name">{{item.name}}</span>
+        {% endif %}
+        {{ item.roomType }}
+      </h4>
+      <h6>
+        {% if item.features.printer == true %}
+          <span class="icon icon-printer true fa-print"></span>
+        {% endif %}
+        {% if item.features.smartboard == true %}
+        <span class="icon icon-smartboard true fa-window-maximize"></span>
+        {% endif %}
+        {% if item.features.mac == true %}
+        <span class="icon icon-mac true fa-apple"></span>
+        {% endif %}
+        {% if item.features.windows == true %}
+        <span class="icon icon-windows true fa-windows"></span>
+        {% endif %}
+        {% if item.features.linux == true %}
+        <span class="icon icon-linux true fa-linux"></span>
+        {% endif %}
+        {% if item.features.projector == true %}
+        <span class="icon icon-projector true fa-television"></span>
+        {% endif %}
+        {% if item.features.phone == true %}
+        <span class="icon icon-phone true fa-phone"></span>
+        {% endif %}
+      </h6>
+    </div>
+  </a>
+</li>
+{% endfor %}

@@ -1,0 +1,23 @@
+.rooms {
+  .room-name {
+    &:after {
+      content: ' - ';
+    }
+  }
+}
+
+.icon {
+
+  float: left;
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+  //background-image: url(../img/arrow-back.svg);
+  background-size: contain;
+  opacity: 0.5;
+  //background-color: pink;
+
+  &.true {
+    opacity: 1;
+  }
+}

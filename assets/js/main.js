@@ -18,6 +18,8 @@
 
     if (currentSection === '#search') {
       $('.search-field').focus();
+      $('.search-field').val('');
+      $('.form').submit();
     }
   });
 
@@ -33,7 +35,7 @@
 
       var tags = null;
 
-      $('.list-item').each(function(){
+      $('.searchable .list-item').each(function(){
         tags = $(this).attr('data-tags').toLowerCase();
         console.log('data-tags', tags);
 
@@ -52,4 +54,24 @@
     }
   });
 
+  $('.map-change').on('click', function(e) {
+    var floor = $(this).attr('data-floor');
+
+    $('.map').hide(200);
+    $(floor).show(200);
+  });
+  $('.map-size-btn').on('click', function(e) {
+    $('#map').toggleClass('full-map');
+    if($('#map').hasClass('full-map')){
+      $(this).text('Zoom In');
+    } else {
+      $(this).text('Zoom Out');
+    }
+
+  });
+
+  $('.reset-btn').on('click', function(e) {
+    location.reload();
+
+  });
 })();
