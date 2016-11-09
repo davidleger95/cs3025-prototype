@@ -1,5 +1,5 @@
 {% for item in site.data.rooms %}
-<li class="list-item" data-tags="{{ item.name }} {{ item.room }} {{ item.tags }}">
+<li class="list-item" data-tags="{{ item.roomName }} {{ item.roomType }} {{ item.room }} {{ item.tags }}">
   <a href="#room">
     <div class="thumbnail">
       <img src="{{site.baseurl}}/assets/img/{{ item.img }}" alt="{{ item.imgAlt }}" />
@@ -7,8 +7,8 @@
     <div class="data rooms">
       <h5>{{ item.room }}</h5>
       <h4>
-        {% if item.name %}
-        <span class="room-name">{{item.name}}</span>
+        {% if item.roomName %}
+        <span class="room-name">{{item.roomName}}</span>
         {% endif %}
         {{ item.roomType }}
       </h4>
