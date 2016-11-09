@@ -2745,19 +2745,24 @@ a {
           align-items: center; }
   #map h1 {
     color: #f55b5b; }
+  #map .map-img {
+    position: relative;
+    overflow: auto;
+    height: 100vh;
+    width: 100%;
+    background: pink; }
   #map img {
+    top: 0;
+    left: 0;
+    position: absolute;
     min-width: calc(100vw - 300px);
     min-height: 100vh;
     -ms-flex-item-align: center;
         align-self: center; }
-  #map.full-map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    #map.full-map img {
-      min-width: auto;
-      min-height: auto;
-      width: 100%; }
+  #map.full-map img {
+    min-width: auto;
+    min-height: auto;
+    width: 100%; }
   #map .controls {
     position: fixed;
     text-align: center;
